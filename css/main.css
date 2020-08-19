@@ -105,6 +105,13 @@ a {
     margin-left: -15px;
 }
 
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(30, 24, 53, .1);
+}
+
 .sectionone {
     width: 100%;
     margin: 0px;
@@ -117,8 +124,9 @@ a {
     background-color: #1e1835;
 }
 
-sectionthree {
-    background-color: white!important
+.sectionthree {
+    background-color: white;
+    padding-bottom: 2.5rem;
 }
 
 /* Header CSS with media query */
@@ -231,6 +239,7 @@ sectionthree {
     max-width: 16.66667%;
     flex: 0 0 16.66667%;
     filter: grayscale(100%);
+    opacity: 50%;
 }
 
 .img-container {
@@ -238,6 +247,64 @@ sectionthree {
     margin-bottom: 20px;
 }
 
+.block {
+    width: 100%;
+    max-width: 50%;
+    flex: 0 0 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+#blockheader {
+    font-size: 35px;
+}
+
+#blockdescription {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.imagecard{
+    flex: 0 0 33.333%;
+    width: 33.333%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.thumb{
+    overflow: hidden;
+    border: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: .25rem;
+}
+
+.thumbdesc{
+    margin-top: -7.2rem!important;
+    background-color: white;
+    z-index: 10;
+    position: relative;
+    margin-right: 10%;
+    border-top: solid 2px #ff5938;
+    border-radius: 2.5px;
+    padding: 0px 10px 10px;
+}
+
+.cardlink{
+    font-weight: 700;
+    color: #ff5938;
+    text-decoration: none;
+    border-bottom: 2px solid #ff5938;
+}
 /*---- Media Queries ---- */
 
 @media screen and (max-width: 600px) {
@@ -305,6 +372,32 @@ sectionthree {
     .grid {
         max-width: 50%;
         flex: 0 0 50%;
+    }
+    .block {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .imagecard{
+        margin-right: auto;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+    }
+
+    #blockheader {
+        font-size: 33px;
+        padding: 0px 10px;
+    }
+
+    #blockdescription {
+        font-size: 16px;
+        /* margin-top: 30px; */
+        padding: 0px 10px;
     }
 }
 
