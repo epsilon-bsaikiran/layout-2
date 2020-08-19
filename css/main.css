@@ -96,6 +96,7 @@ a {
     font-size: 11px;
     line-height: 22px;
     border-radius: .2rem;
+    margin-top: 10px;
 }
 
 .row {
@@ -475,7 +476,7 @@ ul:last-child, dl:last-child, ol:last-child {
     width: 100%;
     height: calc(1.6em + 1.2rem + 2px);
     padding: .6rem 1rem;
-    font-size: 1.05rem;
+    font-size: 13px;
     font-weight: 300;
     line-height: 1.6;
     color: #495057;
@@ -484,6 +485,10 @@ ul:last-child, dl:last-child, ol:last-child {
     border: 1px solid #eae9ec;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#footerbtn{
+    font-size: 14px;
 }
 
 /*---- Media Queries ---- */
@@ -525,7 +530,8 @@ ul:last-child, dl:last-child, ol:last-child {
         text-align: left;
     }
     .sectionone {
-        background-size: 500px 620px;
+        background-size: cover;
+        background-position: top;
     }
     .text-container {
         margin-top: 6%;
@@ -605,9 +611,12 @@ ul:last-child, dl:last-child, ol:last-child {
     .footer-columns {
         width: 50%;
     }
-    .form-style{
-        font-size: 13px;
-    }
 }
 
+@media screen and (min-width: 601px) {
+    .sectionone {
+        background-size: cover;
+        background-position: top;
+    }
+}
 /*---- Media Queries ---- */
