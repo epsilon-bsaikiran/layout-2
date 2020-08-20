@@ -96,6 +96,7 @@ a {
     font-size: 11px;
     line-height: 22px;
     border-radius: .2rem;
+    margin-top: 10px;
 }
 
 .row {
@@ -103,6 +104,13 @@ a {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(30, 24, 53, .1);
 }
 
 .sectionone {
@@ -117,8 +125,13 @@ a {
     background-color: #1e1835;
 }
 
-sectionthree {
-    background-color: white!important
+.sectionthree {
+    background-color: white;
+    padding-bottom: 2.5rem;
+}
+
+.sectionsix {
+    background-color: white;
 }
 
 /* Header CSS with media query */
@@ -231,11 +244,251 @@ sectionthree {
     max-width: 16.66667%;
     flex: 0 0 16.66667%;
     filter: grayscale(100%);
+    opacity: 50%;
 }
 
 .img-container {
     text-align: center;
     margin-bottom: 20px;
+}
+
+.block {
+    width: 100%;
+    max-width: 50%;
+    flex: 0 0 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+#blockheader {
+    font-size: 35px;
+}
+
+#blockdescription {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.imagecard {
+    flex: 0 0 33.333%;
+    width: 33.333%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.thumb {
+    overflow: hidden;
+    border: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: .25rem;
+}
+
+.thumbdesc {
+    margin-top: -6.0rem!important;
+    background-color: white;
+    z-index: 10;
+    position: relative;
+    margin-right: 10%;
+    border-top: solid 2px #ff5938;
+    border-radius: 2.5px;
+    padding: 0px 10px 10px;
+}
+
+.cardlink {
+    font-weight: 700;
+    color: #ff5938;
+    text-decoration: none;
+    border-bottom: 2px solid #ff5938;
+}
+
+#section4description {
+    font-size: 16px;
+    margin-top: 0rem;
+}
+
+.iconcard {
+    flex: 0 0 33.333%;
+    width: 33.333%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.iconcardbody {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 2.5rem!important;
+    border: 1px solid #eae9ec;
+}
+
+.iconcontainer {
+    margin-bottom: 2rem!important;
+}
+
+.customicon {
+    font-size: 22px;
+    width: 3.375rem;
+    height: 3.375rem;
+    line-height: 4.375rem;
+    border-radius: 50%!important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.iconpurple {
+    color: #672ebb!important;
+    background-color: #ebddff!important;
+}
+
+.iconseablue {
+    color: #1ebebe!important;
+    background-color: #d0ffff!important;
+}
+
+.iconorange {
+    color: #ea4336!important;
+    background-color: #ffebea!important;
+}
+
+#carddescription {
+    font-size: 12px;
+    margin: 0rem;
+}
+
+/*---footer css---*/
+
+.footer {
+    background-color: #1e1835;
+    color: #f8f9fa !important;
+    font-size: .875rem;
+    padding: 2.5rem 0 5.5rem 0;
+}
+
+.footer-wrapper {
+    width: 60%;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.footer-wrapper li {
+    float: none;
+}
+
+.footer-wrapper li a {
+    padding: 10px 0px 2px 0px;
+    font-weight: 100;
+    color: white;
+    font-size: 13px;
+}
+
+.footer-wrapper h6 {
+    font-size: 15px;
+    color: white;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -12px;
+    margin-left: -12px;
+}
+
+.footer-blocka {
+    position: relative;
+    width: 30%;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.footer-blockb {
+    position: relative;
+    width: 70%;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.footer-blockb h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.nomargin-row {
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-columns {
+    position: relative;
+    width: 25%;
+    display: block;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+ul:last-child, dl:last-child, ol:last-child {
+    margin-bottom: 0;
+}
+
+.col-lg-3 {
+    width: 23.5%;
+    float: left;
+    margin-right: 10px;
+}
+
+#subscribe {
+    width: 100%;
+}
+
+.form {
+    display: block;
+    margin-top: 0em;
+}
+
+.form-container {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.form-style {
+    display: block;
+    width: 100%;
+    height: calc(1.6em + 1.2rem + 2px);
+    padding: .6rem 1rem;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #eae9ec;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#footerbtn{
+    font-size: 14px;
 }
 
 /*---- Media Queries ---- */
@@ -277,7 +530,8 @@ sectionthree {
         text-align: left;
     }
     .sectionone {
-        background-size: 500px 620px;
+        background-size: cover;
+        background-position: top;
     }
     .text-container {
         margin-top: 6%;
@@ -306,6 +560,63 @@ sectionthree {
         max-width: 50%;
         flex: 0 0 50%;
     }
+    .block {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .imagecard {
+        flex: 0 0 100%;
+        margin-right: auto;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+    }
+    #blockheader {
+        font-size: 33px;
+        padding: 0px 10px;
+    }
+    #blockdescription {
+        font-size: 16px;
+        /* margin-top: 30px; */
+        padding: 0px 10px;
+    }
+    .iconcard {
+        flex: 0 0 100%;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    .footer {
+        padding: 20px;
+    }
+    .footer-wrapper, .footer-blocka, .footer-blockb, .footer-columns {
+        width: 100%;
+    }
+    .col-lg-3 {
+        width: 100%;
+    }
+    .colorstrip-row {
+        padding: 10px 20px;
+    }
+    .colorstrip-row a {
+        display: block;
+        margin-top: 10px;
+    }
+    .footer-columns {
+        width: 50%;
+    }
 }
 
+@media screen and (min-width: 601px) {
+    .sectionone {
+        background-size: cover;
+        background-position: top;
+    }
+}
 /*---- Media Queries ---- */
